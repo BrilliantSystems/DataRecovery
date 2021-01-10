@@ -4,13 +4,13 @@
 
 #imports
 import pygame, keyboard, random, tile
+import versioninfo as v
 
 #pygame init
 pygame.init()
 window = pygame.display.set_mode((800,600))
 clock = pygame.time.Clock()
-version = "0.001a"
-pygame.display.set_caption("Data Recovery [PROTOTYPE] "+str(version))
+pygame.display.set_caption(v.caption)
 gamecrash=False
 x=100
 y=100
